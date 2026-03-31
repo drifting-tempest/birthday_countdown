@@ -3,11 +3,7 @@ const hoursEle = document.getElementById("hours");
 const minutesEle = document.getElementById("minutes");
 const secondsEle =  document.getElementById("seconds");
 
-// im using 0th month = january and 3rd month = april 
-const birthday = new Date();
-birthday.setMonth(3); 
-birthday.setDate(14);
-birthday.setHours(0, 0, 0, 0);
+const birthday = new Date(2026, 3, 14, 0, 0, 0, 0); 
 
 // code for if april 14 passes and this checks for next year
 if (birthday < new Date()) {
